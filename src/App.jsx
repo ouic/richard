@@ -12,6 +12,9 @@ import Hypnose from './components/Hypnose';
 import QuiSuisJe from './components/QuiSuisJe';
 import MesPrincipes from './components/MesPrincipes';
 import Contact from './components/Contact';
+import HypnoseEricksoniennePnl from './components/HypnoseEricksoniennePnl';
+import HypnoseSpirituelle from './components/HypnoseSpirituelle';
+import ParcoursBienEtre from './components/ParcoursBienEtre';
 
 function App() {
   return (
@@ -24,13 +27,24 @@ function App() {
             <li>
               <Link to="/prestations">Prestations</Link>
               <ul>
-                <li><Link to="/nettoyage-harmonisation">Nettoyage et harmonisation d'un lieu</Link></li>
-                <li><Link to="/hypnose-phobie-eau">Hypnose et phobie de l'eau</Link></li>
               </ul>
             </li>
-            <li><Link to="/soins-energetiques">Soins énergétiques</Link></li>
-            <li><Link to="/atelier-exploration">Atelier d'Exploration Énergétique</Link></li>
-            <li><Link to="/hypnose">Hypnose</Link></li>
+            <li>
+              <Link to="/soins-energetiques">Soins énergétiques</Link>
+              <ul>
+                <li><Link to="/nettoyage-harmonisation">Nettoyage et harmonisation d'un lieu</Link></li>
+                <li><Link to="/atelier-exploration">Atelier d'Exploration Énergétique</Link></li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/hypnose">Hypnose</Link>
+              <ul>
+                <li><Link to="/hypnose-phobie-eau">Hypnose et phobie de l'eau</Link></li>
+                <li><Link to="/hypnose-ericksonienne-pnl">Hypnose ERICKSONIENNE et PNL</Link></li>
+                <li><Link to="/hypnose-spirituelle">Hypnose spirituelle</Link></li>
+                <li><Link to="/parcours-bien-etre">Parcours bien-être</Link></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </header>
@@ -43,6 +57,12 @@ function App() {
         <Route path="/soins-energetiques" element={<SoinsEnergetiques />} />
         <Route path="/atelier-exploration" element={<AtelierExploration />} />
         <Route path="/hypnose" element={<Hypnose />} />
+        <Route path="/hypnose-ericksonienne-pnl" element={<HypnoseEricksoniennePnl />} />
+        <Route path="/hypnose-spirituelle" element={<HypnoseSpirituelle />} />
+        <Route path="/parcours-bien-etre" element={<ParcoursBienEtre />} />
+        <Route path="/qui-suis-je" element={<QuiSuisJe />} />
+        <Route path="/mes-principes" element={<MesPrincipes />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <footer className="App-footer">
@@ -53,7 +73,7 @@ function App() {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <p>© 2024 Richard Gaglione Hypnose-Magnétisme</p>
+        <p>réalisé par <a href="https://deviaweb.fr">Deviaweb</a></p>
       </footer>
     </div>
   );
