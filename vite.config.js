@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 4011,
-    allowedHosts: ['richard.deviaweb.com']
+    allowedHosts: ['richard.deviaweb.com', 'www.richard.deviaweb.com']
   }
 });
