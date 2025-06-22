@@ -17,8 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hypnose-Magnétisme</h1>
-				<p>Richard Gaglione</p>
+        <h1>Hypnose Magnétisme</h1>
         <nav>
           <ul>
             <li><Link to="/">Accueil</Link></li>
