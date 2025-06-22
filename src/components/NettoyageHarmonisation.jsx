@@ -4,7 +4,7 @@ function NettoyageHarmonisation() {
   return (
     <div>
       <h2>Nettoyage et harmonisation d'un lieu</h2>
-      <img src="/src/images/nettoyagemaison.jpg" alt="Nettoyage et harmonisation" />
+      <img src="../images/nettoyagemaison.jpg" alt="Nettoyage et harmonisation" />
       <p>Informations sur le nettoyage et l'harmonisation des lieux.</p>
     </div>
   );
