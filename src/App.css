@@ -40,14 +40,14 @@
 }
 
 .App-header nav ul li a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #325174; /* Change color on hover */
 }
 
 /* Style pour les sous-menus */
 .App-header nav ul li ul {
   list-style: none;
   padding: 0;
-  margin-left: 10px; /* Reduce indentation for submenus */
+  margin-left: 0; /* Remove indentation for submenus */
   display: none; /* Masquer par défaut */
   position: absolute;
   background-color: #fff; /* Add background color */
@@ -64,6 +64,7 @@
 .App-header nav ul li ul li {
   margin: 5px 0;
   padding: 5px 10px; /* Add padding to submenu items */
+  text-align: left; /* Align text to the left */
 }
 
 .App-header nav ul li ul li a {
@@ -77,12 +78,19 @@
 }
 
 .App-footer {
-  background-color: #617397;
+  background-color: #2c3e50;
   color: white;
   text-align: center;
+  padding: 20px 0;
   position: relative;
-  bottom: 0;
   width: 100%;
+  z-index: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-footer nav ul {
