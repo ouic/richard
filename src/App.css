@@ -23,6 +23,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #f0f0f0; /* Add background color */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  padding: 10px;
 }
 
 .App-header nav ul li {
@@ -30,19 +34,27 @@
 }
 
 .App-header nav ul li a {
-  color: rgb(0, 0, 0);
+  color: #333; /* Change font color */
   text-decoration: none;
+  transition: color 0.3s ease; /* Add transition for hover effect */
+}
+
+.App-header nav ul li a:hover {
+  color: #007bff; /* Change color on hover */
 }
 
 /* Style pour les sous-menus */
 .App-header nav ul li ul {
   list-style: none;
   padding: 0;
-  margin-left: 20px; /* Indentation pour les sous-menus */
+  margin-left: 10px; /* Reduce indentation for submenus */
   display: none; /* Masquer par défaut */
   position: absolute;
-  background-color: #c4c4c4;
+  background-color: #fff; /* Add background color */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add box shadow */
   z-index: 1;
+  min-width: 150px; /* Set a minimum width for the submenu */
 }
 
 .App-header nav ul li:hover > ul {
@@ -51,6 +63,17 @@
 
 .App-header nav ul li ul li {
   margin: 5px 0;
+  padding: 5px 10px; /* Add padding to submenu items */
+}
+
+.App-header nav ul li ul li a {
+  color: #333; /* Change font color */
+  display: block; /* Make the whole area clickable */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.App-header nav ul li ul li a:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
 }
 
 .App-footer {

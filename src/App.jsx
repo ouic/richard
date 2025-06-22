@@ -3,7 +3,6 @@ import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 // Import des composants pour chaque page
-import Prestations from './components/Prestations';
 import NettoyageHarmonisation from './components/NettoyageHarmonisation';
 import HypnosePhobieEau from './components/HypnosePhobieEau';
 import SoinsEnergetiques from './components/SoinsEnergetiques';
@@ -20,15 +19,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hypnose Magnétisme</h1>
+        <h1>Magnétiseur Hypnothérapeute</h1>
         <nav>
           <ul>
             <li><Link to="/">Accueil</Link></li>
-            <li>
-              <Link to="/prestations">Prestations</Link>
-              <ul>
-              </ul>
-            </li>
             <li>
               <Link to="/soins-energetiques">Soins énergétiques</Link>
               <ul>
@@ -51,7 +45,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/prestations" element={<Prestations />} />
         <Route path="/nettoyage-harmonisation" element={<NettoyageHarmonisation />} />
         <Route path="/hypnose-phobie-eau" element={<HypnosePhobieEau />} />
         <Route path="/soins-energetiques" element={<SoinsEnergetiques />} />
