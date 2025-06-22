@@ -56,8 +56,10 @@
 .App-footer {
   background-color: #617397;
   color: white;
-  padding: 20px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .App-footer nav ul {
