@@ -57,7 +57,7 @@
   background-color: #617397;
   color: white;
   text-align: center;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
