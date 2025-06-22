@@ -78,6 +78,7 @@ function Accueil() {
     <div className="Accueil">
       <h2>Bienvenue</h2>
       <p>Présentation générale de Richard Gaglione et de ses services.</p>
+      <img src="images/cabinet-margencel-nadia-rousseleau-soin-energetique.png" alt="soin energetique" />
     </div>
   );
 }
