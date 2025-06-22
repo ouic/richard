@@ -73,7 +73,7 @@ function App() {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <p>réalisé par <a href="https://deviaweb.fr">Deviaweb</a></p>
+        <p>propulsé par <a href="https://deviaweb.fr" target="_blank">Deviaweb</a></p>
       </footer>
     </div>
   );
